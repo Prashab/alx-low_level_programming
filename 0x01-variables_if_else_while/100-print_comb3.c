@@ -3,7 +3,7 @@
  * main - Prints all possible combinations of two different digits,
  * in ascending order
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
@@ -18,7 +18,6 @@ if (digit1 == 8 && digit2 == 9)
 continue;
 putchar(',');
 putchar(' ');
-}
 }
 }
 putchar('\n');
