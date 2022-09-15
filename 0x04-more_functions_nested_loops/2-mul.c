@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * mul - function that multiplies two integers 
- * @a: an integer type
- * @b: an integer integer
- * Return: return 0 on success and 1 on fail
+ * mul - returns the product of its parameters
+ * @a: int type number
+ * @b: int type number
+ * Return: return 0
  */
 
 
