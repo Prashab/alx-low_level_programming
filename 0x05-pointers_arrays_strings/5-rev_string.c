@@ -1,26 +1,33 @@
+touch 5-rev_string.c
+vim 5-rev_string.c
+
+
 #include "main.h"
+
 /**
- * rev_string - reverses a string
+ * rev_string - point a string in reverse
+ * @s: a pointer given by the main function
+ * Return: 0
  *
- * @s: string parameter input
- *
- * Return: Nothing
  */
 
 void rev_string(char *s)
 {
-int l, i;
-char ch;
+int counter = 0;
+int i = 0;
 
-/*find string length without null char*/
-for (l = 0; s[l] != '\0'; ++l);
+char swap;
 
+while (s[counter] != '\0')
+counter++;
+counter -= 1;
 
-/*swap the string by looping to half the string*/for (i = 0; i < l / 2; ++i)
-{	
-ch = s[i];
-s[i] = s[l - 1 - i]; /*-1 because the array starts from 0*/
-s[l - 1 - i] = ch;
+while (counter > i)
+{
+swap = s[i];
+s[i] = s[counter];
+s[counter] = swap;
+counter--;
+i++;
 }
-
 }
