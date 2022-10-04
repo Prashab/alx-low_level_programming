@@ -36,7 +36,8 @@ free(grid);
 return (NULL);
 }
 }
-grid[i][j] = 0;
+for (i = 0; j < width; j++)
+grid[i][j] = 0
 return (grid);
 }
 
