@@ -41,6 +41,7 @@ while (i >= 0)
 {
 free(ar[i]);
 i--;
+}
 free(ar);
 }
 }
