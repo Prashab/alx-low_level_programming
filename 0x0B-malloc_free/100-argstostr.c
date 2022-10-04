@@ -40,4 +40,4 @@ str[c] = '\n';
 c++;
 }
 return (str);
-}	
+}
