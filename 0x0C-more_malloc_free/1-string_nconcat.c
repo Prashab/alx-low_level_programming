@@ -38,7 +38,7 @@ return (0);
 
 for (i = 0; i < size1; i++)
 {
-p[i] = s1[
+p[i] = s1[i];
 }
 
 for (; i < (size1 + n); i++)
