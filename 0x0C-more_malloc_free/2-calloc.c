@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  * *_calloc -allocated memoria for nmeb elemn de zise bytes
