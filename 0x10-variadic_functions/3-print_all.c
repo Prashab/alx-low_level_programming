@@ -29,7 +29,7 @@ switch (format[i])
 case 'c':
 printf("%c", va_arg(valist, int)), c = 1;
 break;
-cass 'i':
+case 'i':
 printf("%d", va_arg(valist, int)), c = 1;
 break;
 case 'f':
