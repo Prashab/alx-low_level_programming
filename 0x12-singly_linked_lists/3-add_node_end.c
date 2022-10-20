@@ -21,6 +21,7 @@ new->str = strdup(str);
 
 for (nchar = 0; str[nchar]; nchar++);
 
+
 new->len = nchar;
 new->next = NULL;
 temp = *head;
