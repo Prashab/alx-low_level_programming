@@ -1,19 +1,26 @@
-#include "lists.h"
+#include "main.h"
 
 /**
- * listint_len - returns the number of elements in a linked lists
- * @h: linked list of type listint_t to traverse
- * Return: number of nodes
+ * print_binary - prints the binary equivalent of a decimal number
+ * @n: number to print in binary
  */
-size_t listint_len(const listint_t *h)
+void print_binary(unsigned long int n)
 {
-size_t num = 0;
+int i, count = 0;
+unsigned long int current;
 
-while (h)
+for (i = 63; i >= 0; i--)
 {
-num++;
-h = h->next;
+current = n >> i;
+
+if (current & 1)
+{
+_putchar('1');
+count++;
 }
-
-return (num);
+else if (count)
+_putchar('0');
+}
+if (!count)
+_putchar('0');
 }
